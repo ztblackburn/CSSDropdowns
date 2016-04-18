@@ -1,0 +1,36 @@
+<html>
+<div class="nav-top-div">
+    <div class="nav-top-list">
+        <input type="checkbox" id="Item1">
+        <label for="Item1">Item 1</label>
+        <div class="submenu">
+        <a href="#">Sub 1</a>
+        <a href="#">Sub 2</a>
+        <a href="#">Sub 3</a>
+        <a href="#">Sub 4</a>
+        </div>
+    </div>
+    <div class="nav-top-list">
+        <input type="checkbox" id="Item2">
+        <label for="Item2">Item 2</label>
+        <div class="submenu">
+        <a href="#">Sub 1</a>
+        <a href="#">Sub 2</a>
+        <a href="#">Sub 3</a>
+        <a href="#">Sub 4</a>
+        </div>
+    </div>
+</div>
+<style>
+    .nav-top-list{display: inline-block;vertical-align: top}
+    .nav-top-list input[type="checkbox"]{display:none;}
+    .submenu{display:none;}
+    .submenu a {display: block;}
+    .nav-top-list a{color:#fff;}
+    .nav-top-list input[type="checkbox"]:checked + label + div{display:block !important;}
+    .nav-top-list input[type="checkbox"]:checked + label{text-decoration:underline;}
+    .nav-top-div {background-color: rgb(210, 157, 15);}
+    .nav-top-list{ display: inline-block;color: #fff;padding: 5px 23px;
+    }
+</style>
+</html>
